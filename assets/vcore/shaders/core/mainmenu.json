@@ -1,0 +1,49 @@
+{
+  "blend": {
+    "func": "add",
+    "srcrgb": "srcalpha",
+    "dstrgb": "1-srcalpha"
+  },
+  "vertex": "position",
+  "fragment": "vcore:mainmenu",
+  "attributes": [],
+  "samplers": [],
+  "uniforms": [
+    { "name": "ModelViewMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+    { "name": "ProjMat", "type": "matrix4x4", "count": 16, "values": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ] },
+
+    { "name": "iTime", "type": "float", "count": 1, "values": [ 0.0 ] },
+    { "name": "iResolution", "type": "float", "count": 3, "values": [ 1.0, 1.0, 1.0 ] },
+    { "name": "mode", "type": "int", "count": 1, "values": [ 0 ] },
+    { "name": "animationSpeed", "type": "float", "count": 1, "values": [ 1.0 ] },
+
+    { "name": "enableTop", "type": "float", "count": 1, "values": [ 1.0 ] },
+    { "name": "enableMiddle", "type": "float", "count": 1, "values": [ 1.0 ] },
+    { "name": "enableBottom", "type": "float", "count": 1, "values": [ 1.0 ] },
+
+    { "name": "topLineCount", "type": "float", "count": 1, "values": [ 6.0 ] },
+    { "name": "middleLineCount", "type": "float", "count": 1, "values": [ 6.0 ] },
+    { "name": "bottomLineCount", "type": "float", "count": 1, "values": [ 6.0 ] },
+
+    { "name": "topLineDistance", "type": "float", "count": 1, "values": [ 0.05 ] },
+    { "name": "middleLineDistance", "type": "float", "count": 1, "values": [ 0.05 ] },
+    { "name": "bottomLineDistance", "type": "float", "count": 1, "values": [ 0.05 ] },
+
+    { "name": "topWavePosition", "type": "float", "count": 3, "values": [ 10.0, 0.5, -0.4 ] },
+    { "name": "middleWavePosition", "type": "float", "count": 3, "values": [ 5.0, 0.0, 0.2 ] },
+    { "name": "bottomWavePosition", "type": "float", "count": 3, "values": [ 2.0, -0.7, -1.0 ] },
+
+    { "name": "iMouse", "type": "float", "count": 2, "values": [ -1000.0, -1000.0 ] },
+    { "name": "interactive", "type": "float", "count": 1, "values": [ 1.0 ] },
+    { "name": "bendRadius", "type": "float", "count": 1, "values": [ 5.0 ] },
+    { "name": "bendStrength", "type": "float", "count": 1, "values": [ -0.5 ] },
+    { "name": "bendInfluence", "type": "float", "count": 1, "values": [ 0.0 ] },
+
+    { "name": "parallax", "type": "float", "count": 1, "values": [ 1.0 ] },
+    { "name": "parallaxOffset", "type": "float", "count": 2, "values": [ 0.0, 0.0 ] },
+
+    { "name": "middleLineColor", "type": "float", "count": 3, "values": [ 1.0, 1.0, 1.0 ] },
+    { "name": "sideLineColor", "type": "float", "count": 3, "values": [ 1.0, 1.0, 1.0 ] },
+    { "name": "glowStrength", "type": "float", "count": 1, "values": [ 0.55 ] }
+  ]
+}

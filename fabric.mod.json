@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "vcore",
+  "version": "0.7",
+  "icon": "icon.png",
+  "name": "V-Core",
+  "description": "Better minecraft:
+- Inventory Animation
+- Boost FPS
+- Clear Ram",
+  "authors": [
+    {
+      "name": "vu_2007"
+    }
+  ],
+  "accessWidener": "Vcore.accesswidener",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "vcore.Vcore"
+    ]
+  },
+  "mixins": [
+    "Vcore.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21",
+    "java": ">=21"
+  },
+  "suggests": {
+    "sodium": "*",
+    "exordium": "*",
+    "starlight": "*",
+    "ias": "*",
+    "viafabricplus": "*"
+  }
+}
